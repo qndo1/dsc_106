@@ -45,7 +45,11 @@ for (let p of pages) {
 
 // === Step 4: Dark Mode ===
 
+// Force light mode for now
+document.documentElement.style.setProperty("color-scheme", "light");
+
 // Add dark mode switch HTML to top of <body>
+/*
 document.body.insertAdjacentHTML(
   "afterbegin",
   `
@@ -81,6 +85,7 @@ select.addEventListener("input", function (event) {
 if ("colorScheme" in localStorage) {
   setColorScheme(localStorage.colorScheme);
 }
+*/
 
 // === Step 5: Intercept form submission for proper email encoding ===
 
